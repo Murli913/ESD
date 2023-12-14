@@ -1,0 +1,269 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap");
+
+body {
+    padding: 0;
+    margin: 0;
+    font-family: "Roboto", sans-serif;
+}
+
+h1 {
+text-align: center;
+}
+.topnav {
+  background-color: #333;
+  overflow: hidden;
+}
+
+/* Style the links inside the navigation bar */
+.topnav img  {
+  float: left;
+  color: #f2f2f2;
+  text-align: right;
+  padding: 8px 12px;
+  text-decoration: none;
+  font-size: 15px;
+}
+.topnav a {
+  float: right;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+}
+
+/* Change the color of links on hover */
+.topnav a:hover {
+  background-color: #ddd;
+  color: black;
+}
+
+/* Add a color to the active/current link */
+.topnav a.active {
+  background-color: #04AA6D;
+  color: white;
+}
+<!-- .slider{
+width: 100%;
+height: 100%;
+background: url(p20.jpg);
+margin: 100px auto;
+animation: slide 20s infinite;
+}
+
+@keyframes slide{
+25%{
+background: url(p21.jpg);
+}
+50%{
+background: url(p22.jpg);
+}
+75%{
+background: url(p20.jpg);
+}
+100%{
+background: url(p22.jpg);
+}
+
+}-->
+
+.categories {
+    max-width: 100%;
+    margin: 40px auto;
+    display: flex;
+    flex-wrap: wrap;
+    padding-top:20px;
+    padding-left:30px;
+    transition: margin-right 2s .5s;
+     font-size: 14px;
+  transition: font-size 4s 1s;
+  transition: width 2s;
+     transition: all 0.5s ease;
+   
+}
+
+.category-item {
+    flex-grow: 1;
+    flex-basis: 0;
+    max-width: initial;
+    border: 2px solid white;
+    box-sizing: border-box;
+    height: 350px;
+    background-size: cover;
+    background-position: center;
+    padding-top:20px;
+    padding-left:30px;
+      font-size: 14px;
+      transition: width 2s;
+  transition: font-size 4s 1s;
+   transition: all 0.5s ease;
+  
+}
+
+.category-item-inner {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+     transition: all 0.5s ease;
+    
+}
+
+.category-item-inner > div {
+    padding: 10px 20px;
+    background: black;
+    color: white;
+    border-radius: 10px;
+    font-size: 30px;
+    font-weight: bold;
+    text-transform: uppercase;
+     transition: all 0.5s ease;
+    background: #A7BEAE;
+  transition: font-size 4s 1s;
+  
+}
+
+@media (max-width: 1000px) {
+    .category-item {
+        min-width: 50%;
+    }
+}
+
+@media (max-width: 800px) {
+    .category-item {
+        min-width: 100%;
+    }
+}
+
+.featured-products {
+    margin-top: 20px;
+    max-width: 1200px;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+     transition: all 0.5s ease;
+    grid-gap: 5px;
+    background: #A7BEAE;
+}
+
+@media (max-width: 1000px) {
+    .featured-products {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (max-width: 800px) {
+    .featured-products {
+        grid-template-columns: 1fr;
+    }
+}
+
+.featured-products-title {
+    text-align: center;
+}
+
+.featured-product-item {
+    border-radius: 5px;
+    overflow: hidden;
+    text-align: center;
+    box-sizing: border-box;
+    border: 1px solid #ddd;
+     max-width: 100%;
+     height: 100%;
+     object-fit: scale-down;
+      transition: all 0.5s ease;
+      background: #A7BEAE;
+}
+
+.featured-product-item-image {
+    height: 200px;
+    background-size: cover;
+    background-position: center;
+     transition: all 0.5s ease;
+   
+}
+
+.featured-product-item > .title {
+    font-size: 20px;
+    font-weight: bold;
+     transition: all 0.5s ease;
+}
+
+.featured-product-item > .description {
+    color: #666;
+}
+
+.featured-product-item > .price {
+    font-style: italic;
+}
+
+button {
+    outline: none;
+    background: black;
+    font-family: "Roboto", sans-serif;
+    color: white;
+    padding: 10px 15px;
+    text-transform: uppercase;
+    cursor: pointer;
+    font-weight: bold;
+    border-radius: 5px;
+    font-size: 16px;
+    margin: 10px 0;
+}
+
+{
+  box-sizing: border-box;
+}
+
+/* Style inputs */
+input[type=text], select, textarea {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #ccc;
+  margin-top: 6px;
+  margin-bottom: 16px;
+  resize: vertical;
+}
+
+input[type=submit] {
+  background-color: #04AA6D;
+  color: white;
+  padding: 12px 20px;
+  border: none;
+  cursor: pointer;
+}
+
+input[type=submit]:hover {
+  background-color: #45a049;
+}
+
+/* Style the container/contact section */
+.container {
+  border-radius: 5px;
+  background-color: #f2f2f2;
+  padding: 10px;
+}
+
+/* Create two columns that float next to eachother */
+.column {
+  float: left;
+  width: 50%;
+  margin-top: 6px;
+  padding: 20px;
+}
+
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* Responsive layout - when the screen is less than 600px wide, make the two columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 600px) {
+  .column, input[type=submit] {
+    width: 100%;
+    margin-top: 0;
+  }
+}
